@@ -14,7 +14,7 @@ START_DIR="$1"
 # The ExifTool command you want to apply to every MP4 file
 # Example: Removes all metadata. Adjust this to your specific needs!
 # WARNING: This command changes or deletes data. Be careful!
-EXIFTOOL_COMMAND='exiftool -Keys:GPSCoordinates<GPSCoordinates -overwrite_original'
+EXIFTOOL_COMMAND='exiftool -Keys:GPSCoordinates<GPSCoordinates -Keys:Make<AndroidMake -Keys:Model<AndroidModel -overwrite_original'
 # If you only want to display the metadata, use:
 # EXIFTOOL_COMMAND="exiftool" 
 # --- End Configuration ---
